@@ -11,3 +11,8 @@ app = FastAPI(
 @app.get("/")
 def root():
     return {"message": "Hello World"}
+
+
+@app.get("/ping")
+async def on_read():
+    return {"message": "Hello World"}
